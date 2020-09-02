@@ -1,0 +1,32 @@
+.researchContent {
+    width: 60%;
+    margin: 0 auto;
+
+    h2 {
+        border-bottom: 1px solid black;
+    }
+
+    .projects {
+        display: flex;
+        justify-content: space-evenly;
+
+        .projectContainer {
+            max-width: 40%;
+        }
+    }
+
+    .publications, .dissertations {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 60px;
+
+        .publicationContainer {
+            min-width: 80%;
+            
+            .authors {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

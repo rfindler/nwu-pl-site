@@ -1,0 +1,36 @@
+.peopleContent {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    h2 {
+        border-bottom: 1px solid black;
+    }
+
+    .personContainer {
+        padding-left: 50px;
+        margin-bottom: 50px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        
+        .photo {
+            max-width: 30%;
+        }
+
+        .content {
+            align-self: center;
+            margin-left: 20px;
+            max-width: 70%;
+
+            h3 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: blue;
+           }
+        }
+    }
+}

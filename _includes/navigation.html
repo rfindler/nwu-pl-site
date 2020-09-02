@@ -1,0 +1,11 @@
+<div class="header">
+    <img class="headerImage" src="assets/img/northwestern_bg.png"/>
+    <h1>Northwestern University Programming Languages Group</h1> 
+    <nav>
+        {% for item in site.data.navigation %}
+            <a href="{{ site.url }}{{ item.link }}" {% if page.url == item.link %}class="current"{% endif%}>
+                {{ item.name }}
+            </a>
+        {% endfor%}
+    </nav>
+</div>

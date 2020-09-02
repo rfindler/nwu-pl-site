@@ -1,0 +1,39 @@
+.header {
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .headerImage {
+        width: 50vw;
+        height: 30vh;
+    }
+
+    nav {
+        margin-top: 10px;
+        width: 50vh;
+        display: inline-flex;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: purple;
+            padding: 10px 20px;
+            color: $primaryBackgroundColor;
+            margin: 0 20px;
+            border: 2px solid transparent;
+            border-radius: 25px;
+
+            &:hover, &.current {
+                background-color: $primaryBackgroundColor;
+                border: 2px solid purple;
+                color: purple;
+            }
+        }
+    }
+}

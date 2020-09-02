@@ -1,0 +1,19 @@
+---
+title: People
+---
+{% assign professors = site.people | where: 'role', "Professor" %}
+{% assign current_students = site.people | where: 'role', "Student" %}
+{% assign former_students = site.people | where: 'role', "Former Student" %}
+
+<div class="peopleContent">
+    <h2>Our People</h2>
+    {% for professor in professors %}
+        {% include person_display.html person=professor %}
+    {% endfor %}
+    {% for student in current_students %}
+        {% include person_display.html person=student %}
+    {% endfor %}
+    {% for former_student in former_students %}
+        {% include person_display.html person=former_student %}
+    {% endfor %}
+</div>

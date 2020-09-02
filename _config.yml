@@ -1,0 +1,12 @@
+collections:
+  people:
+  projects:
+  publications:
+  dissertations:
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

@@ -1,0 +1,38 @@
+---
+title: Research
+---
+<div class="researchContent">
+    <h1>Our Research</h1>
+    <div class="overview">
+        This is a blurb about our current research goals, projects, and motivations. Placeholder sentence
+        to take up enough space and make this section reasonably long.
+    </div>
+
+    <h2>Highlighted Publications</h2>
+    <div class="publications">
+        {% for pub in site.publications %}
+            <div class="publicationContainer">
+                <h3>{{ pub.title }}</h3>
+                {% if pub.link %}
+                    <div class="link">Link: <a href="{{ pub.link }}" target="_blank">{{ pub.link }}</a></div>
+                {% endif %}
+                <div class="authors">Author(s): {{ pub.authors }}</div>
+                <div class="abstract">{{ pub.content }}</div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h2>Dissertations</h2>
+    <div class="publications">
+        {% for dissertation in site.dissertations %}
+            <div class="publicationContainer">
+                <h3>{{ dissertation.title }}</h3>
+                {% if dissertation.link %}
+                    <div class="link">Link: <a href="{{ pub.link }}">{{ pub.link }}</a></div>
+                {% endif %}
+                <div class="authors">Author: {{ dissertation.author }}</div>
+                <div class="abstract">{{ dissertation.content }}</div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
