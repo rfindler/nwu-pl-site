@@ -6,7 +6,7 @@ This site is built using Jekyll, please refer to the [Jekyll Documentation](http
 
 1. Make a local file in the root directory called `_config_local.yml` (this is already in `.gitignore`).
 2. In this file you need one property, called `url`. It should be the absolute path in your file system to this directory with `/_site`, for me on Windows it looks like this: `url: file:///C:/Users/aowens/projects/nwu-pl-site/_site`. This must be done so links work in your locally built site.
-3. Run `jekyll clean` and then `jekyll build --config _config.yml,_config.local` (copy and paste this, spaces matter for the comma separated flag arguments) from the root of this project.
+3. Run `jekyll clean` and then `jekyll build --config _config.yml,_config_local.yml` (copy and paste this, spaces matter for the comma separated flag arguments) from the root of this project.
 4. You should see a new directory `_site`, in your project directory, inside it is the static site you can view your changes to.
 
 Jekyll doesn't use a database for site data, but rather a construct called [Collections](https://jekyllrb.com/docs/collections/) for static data. On this site there are 3 collections we focus on: **_people**, **_publications**, and **_dissertations**, and each has a corresponding directory containing Markdown files (the individual records). Adding data to a collection is pretty simple, but records do have to conform to a structure so the site can display them properly.
